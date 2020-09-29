@@ -11,7 +11,7 @@ if (isset($_POST['editor'])) {
     file_put_contents(DR . dir_site_module_nowlev_tpl . 'body.page.htm', $_POST['editor']);
 }
 
-$vv['in_body_end'][] = '<script type="text/javascript" charset="utf-8" src="/js/ckeditor.4.5.11/ckeditor.js"></script>';
+$vv['in_body_end'][] = '<script type="text/javascript" charset="utf-8" src="/vendor/didrive/libs/js/ckeditor.4.5.11/ckeditor.js"></script>';
 $vv['in_body_end'][] = '<script  type="text/javascript" charset="utf-8"  >'
         . ' CKEDITOR.replace("editor1", { '
         . ' height: 400, '

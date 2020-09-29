@@ -24,3 +24,5 @@ if (!file_exists(DR . dir_site_module_nowlev_tpl . $page)) {
 $vv['tpl_body_in'] = dir_site_module_nowlev_tpl.'body.page.htm';
 
 $vv['tpl_body'] = dir_site_module_nowlev_tpl . 'body.base.htm';
+
+//\f\pa(get_defined_vars());
