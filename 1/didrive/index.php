@@ -8,7 +8,7 @@ $vv['krohi'][1] = array(
 
 if (isset($_POST['editor'])) {
     $vv['warn'] .= '<div class="warn" >Данные записаны (<a href="/' . $vv['level'] . '/" target="_blank" >страница на сайте</a>)</div>';
-    file_put_contents(DR . dir_site_module_nowlev_tpl . 'body.page.htm', $_POST['editor']);
+    file_put_contents(DR . dir_site_module_nowlev_tpl_local . 'body.page.htm', $_POST['editor']);
 }
 
 $vv['in_body_end'][] = '<script type="text/javascript" charset="utf-8" src="/vendor/didrive/libs/js/ckeditor.4.5.11/ckeditor.js"></script>';
@@ -41,6 +41,6 @@ $vv['in_body_end'][] = '<script  type="text/javascript" charset="utf-8"  >'
   . ' ] } ); </script>';
  */
 
-$vv['html'] = file_exists(DR . dir_site_module_nowlev_tpl . 'body.page.htm') ? file_get_contents(DR . dir_site_module_nowlev_tpl . 'body.page.htm') : '';
+$vv['html'] = file_exists(DR . dir_site_module_nowlev_tpl_local . 'body.page.htm') ? file_get_contents(DR . dir_site_module_nowlev_tpl_local . 'body.page.htm') : '';
 
 $vv['tpl_body'] = \f\like_tpl('body', dir_mods_mod_vers_didrive_tpl, dir_site_module_nowlev_tpldidr, DR);
