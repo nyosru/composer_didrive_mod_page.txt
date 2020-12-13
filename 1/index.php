@@ -64,7 +64,7 @@ if (!file_exists($dir_tpl . $page)) {
 //    file_put_contents(DR . dir_site_module_nowlev_tpl . $page, ' <p>новый файл + отредактируйте файл в панели управления</p> ');
 //}
 
-\f\pa(dir_site_module_nowlev_tpl_local . 'body.page.htm');
+//\f\pa(dir_site_module_nowlev_tpl_local . 'body.page.htm');
 
 $vv['tpl_body_in'] = dir_site_module_nowlev_tpl_local . 'body.page.htm';
 
